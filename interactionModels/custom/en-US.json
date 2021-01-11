@@ -1,0 +1,61 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "action network",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "MyActionIntent",
+          "slots": [],
+          "samples": [
+            "tell me my action",
+            "my bets",
+            "my action",
+            "whats my action"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "MyRecordIntent",
+          "slots": [
+            {
+              "name": "period",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "what is my record {period}",
+            "what was my record this {period}",
+            "what is my record this {period}",
+            "record {period}"
+          ]
+        }
+      ],
+      "types": [],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "11"
+}
